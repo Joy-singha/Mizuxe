@@ -1,0 +1,102 @@
+$primary: #3292a6;
+$primary-overly: rgba(50, 146, 156, 0.7);
+
+.navbar{
+    box-shadow: 2px 2px 5px $primary;
+    background: rgba(255, 255, 255, 0.9);
+
+    .nav-item{
+        font-size: 1.4rem;
+        padding-right: 20px;
+    
+        .nav-link:hover{
+            color: $primary;
+        }
+    }
+
+    .nav-item:last-child{
+        padding-right: 0;
+    }
+
+}
+
+
+
+#showcase{
+    background-image: url(../img/pexels-brett-sayles-1701188.jpg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: auto;
+    
+    ;
+
+    .primary-overly{
+        background: $primary-overly;
+        min-height: auto;
+        top: 0;
+        left: 0;
+        width: 100%;
+        width: 100%;
+
+
+        h1{
+            font-size: 100px;
+        }
+        
+    }
+}
+
+#subscribe{
+    background: #252525;
+}
+
+#authors{
+    img{
+        margin-top: -50px;
+    }
+
+    h3{
+        margin-top: 30px;
+    }
+
+    .card:hover{
+        background: $primary;
+        color: #fff;
+        transition: 0.5s;
+
+        .fa{
+            color: #fff;
+        }
+    }
+    
+    .fa{
+        font-size: 25px;
+    }
+}
+
+#contact{
+    .fa{
+        font-size: 25px;
+    }
+    .fa:nth-child(2){
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+@media(max-width: 576px){
+    #showcase{
+
+        .primary-overly{
+            h1{
+                font-size: 3rem;
+            }
+        }
+    }
+}
